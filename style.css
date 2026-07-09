@@ -651,8 +651,10 @@ h3 {
 
 .partner-link img {
   display: block;
-  width: min(620px, 100%);
+  width: min(520px, 100%);
+  max-height: 92px;
   height: auto;
+  object-fit: contain;
 }
 
 .partner-link span {
