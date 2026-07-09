@@ -211,6 +211,27 @@ p {
   box-shadow: var(--shadow);
 }
 
+.target-audience {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 780px;
+  margin-top: 18px;
+}
+
+.target-audience span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 5px 10px;
+  border: 1px solid rgba(31, 111, 169, 0.2);
+  border-radius: 8px;
+  color: var(--navy);
+  background: rgba(255, 255, 255, 0.84);
+  font-size: 13px;
+  font-weight: 700;
+}
+
 .hero-visual {
   position: absolute;
   inset: auto 5vw 70px auto;
@@ -291,6 +312,120 @@ h3 {
 .card {
   min-height: 310px;
   padding: 24px;
+}
+
+.training-card {
+  grid-column: 1 / -1;
+}
+
+.training-card h4 {
+  margin: 0 0 8px;
+  color: var(--navy);
+  font-size: 16px;
+}
+
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 18px 0;
+}
+
+.training-grid > div {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfdfe;
+}
+
+.training-illustration {
+  margin: 18px 0 20px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.training-illustration img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+
+.procedure-stats {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+  margin: 18px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.procedure-stats li {
+  min-height: 96px;
+  padding: 12px 10px;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--navy);
+  text-align: center;
+}
+
+.procedure-stats a {
+  display: grid;
+  align-content: center;
+  min-height: 72px;
+  color: inherit;
+}
+
+.procedure-stats li:has(a) {
+  transition: transform 0.16s ease, background 0.16s ease;
+}
+
+.procedure-stats li:has(a):hover {
+  background: var(--blue);
+  transform: translateY(-2px);
+}
+
+.procedure-stats strong {
+  display: block;
+  font-size: 26px;
+  line-height: 1.15;
+}
+
+.procedure-stats span {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.training-note {
+  padding: 14px 16px;
+  border-left: 4px solid var(--cyan);
+  border-radius: 0 8px 8px 0;
+  color: var(--navy);
+  background: #eef8fa;
+  font-weight: 700;
+}
+
+.ep-card {
+  border-top: 4px solid var(--green);
+}
+
+.pancreatitis-card {
+  border-top: 4px solid var(--cyan);
+}
+
+.ep-stats {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.reference-line {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
 }
 
 .tool-card {
@@ -685,6 +820,14 @@ h3 {
   justify-content: space-between;
 }
 
+.footer-note {
+  display: inline-block;
+  margin-top: 6px;
+  color: rgba(216, 232, 239, 0.82);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 .back-to-top {
   min-height: 40px;
   padding: 0 14px;
@@ -742,8 +885,17 @@ h3 {
   .split,
   .card-grid,
   .education-visuals,
+  .training-grid,
   .timeline {
     grid-template-columns: 1fr;
+  }
+
+  .procedure-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .ep-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .tool-card {
@@ -803,6 +955,10 @@ h3 {
     width: 132px;
     height: 162px;
     justify-self: start;
+  }
+
+  .procedure-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .publication-list {
