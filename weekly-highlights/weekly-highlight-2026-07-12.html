@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>今週の胆膵疾患研究ハイライト | 2026年7月6日〜7月12日</title>
+  <meta name="description" content="PubMedとClinicalTrials.govをもとにした、胆膵内視鏡・ERCP・EUS、膵炎、PSC、IgG4関連疾患、肝移植領域の週次研究ハイライトです。">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://iwaiwa2007-cmyk.github.io/TOKAIHBP-HP/weekly-highlights/weekly-highlight-2026-07-12.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=20260710-1">
+  <style>
+    :root {
+      --ink: #18334d;
+      --muted: #637587;
+      --line: #d9e4ec;
+      --bg: #f4f8fb;
+      --card: #ffffff;
+      --accent: #1f8aa5;
+      --accent-strong: #14607a;
+      --gold: #b98b2d;
+      --green: #3f8f63;
+      --red: #bc4b4b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans JP", sans-serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, #eef6f9 0%, #f8fbfd 38%, #ffffff 100%);
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--accent-strong);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.18em;
+    }
+
+    .page {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 112px 20px 56px;
+    }
+
+    .highlight-hero {
+      padding: 36px;
+      border-radius: 8px;
+      color: #ffffff;
+      background:
+        radial-gradient(circle at 16% 20%, rgba(255, 255, 255, 0.22), transparent 28%),
+        linear-gradient(135deg, #143a56 0%, #176d83 55%, #21a0a8 100%);
+      box-shadow: 0 18px 42px rgba(22, 66, 90, 0.22);
+    }
+
+    .highlight-hero p {
+      margin: 0;
+    }
+
+    .eyebrow {
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.82;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 10px 0 16px;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 22px 0 8px;
+    }
+
+    .nav a {
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .card {
+      margin-top: 22px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--card);
+      box-shadow: 0 10px 26px rgba(24, 51, 77, 0.08);
+    }
+
+    .section-panel {
+      overflow: hidden;
+    }
+
+    .section-summary {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .section-summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .section-summary::before {
+      content: "▶";
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      color: #ffffff;
+      background: var(--accent);
+      font-size: 0.82rem;
+      line-height: 1;
+      transform: rotate(0deg);
+      transition: transform 0.18s ease;
+      flex: 0 0 auto;
+    }
+
+    .section-panel[open] .section-summary::before {
+      transform: rotate(90deg);
+    }
+
+    .section-summary h2 {
+      flex: 1;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #dceaf0;
+      font-size: 1.55rem;
+      line-height: 1.35;
+    }
+
+    h3 {
+      margin: 24px 0 10px;
+      font-size: 1.12rem;
+      line-height: 1.45;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .summary-box {
+      padding: 16px;
+      border-radius: 12px;
+      background: #eef7f8;
+      border: 1px solid #cfe5ea;
+    }
+
+    .summary-box strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--accent-strong);
+      font-size: 1.4rem;
+      line-height: 1.1;
+    }
+
+    .paper {
+      padding: 16px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .paper:first-of-type {
+      border-top: 0;
+    }
+
+    .paper-heading {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: start;
+    }
+
+    .paper-title {
+      margin: 0 0 8px;
+      font-weight: 800;
+      color: #132c44;
+    }
+
+    .paper-title a {
+      color: inherit;
+      text-decoration-color: rgba(31, 138, 165, 0.45);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.2em;
+    }
+
+    .paper-title a:hover {
+      color: var(--accent-strong);
+      text-decoration-color: currentColor;
+    }
+
+    .topic-logo {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      width: 58px;
+      min-height: 58px;
+      padding: 6px;
+      border-radius: 16px;
+      color: #ffffff;
+      background: #1f8aa5;
+      box-shadow: 0 8px 18px rgba(24, 51, 77, 0.16);
+      text-align: center;
+      flex: 0 0 auto;
+    }
+
+    .topic-logo svg {
+      width: 26px;
+      height: 26px;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .topic-logo small {
+      color: #ffffff;
+      font-size: 0.62rem;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .topic-ercp {
+      background: linear-gradient(135deg, #1f6fa9, #22a6c8);
+    }
+
+    .topic-eus {
+      background: linear-gradient(135deg, #167c78, #35bfa9);
+    }
+
+    .topic-surgery {
+      background: linear-gradient(135deg, #3f8f63, #88bd45);
+    }
+
+    .topic-pancreas {
+      background: linear-gradient(135deg, #bc4b4b, #e8875b);
+    }
+
+    .topic-evidence {
+      background: linear-gradient(135deg, #6f5aa8, #a379cf);
+    }
+
+    .topic-drug {
+      background: linear-gradient(135deg, #b98b2d, #d8b84a);
+    }
+
+    .topic-ai {
+      background: linear-gradient(135deg, #4354a6, #6c95d8);
+    }
+
+    .topic-transplant {
+      background: linear-gradient(135deg, #2d7c6f, #7dbb76);
+    }
+
+    .topic-psc {
+      background: linear-gradient(135deg, #34506b, #7490a9);
+    }
+
+    .topic-aip {
+      background: linear-gradient(135deg, #9a4f7c, #d47aa4);
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 8px 0 10px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 3px 9px;
+      border-radius: 8px;
+      background: #edf3f7;
+      color: #395267;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .badge.high {
+      background: #fff3d8;
+      color: #7b5713;
+    }
+
+    .badge.clinical {
+      background: #e8f5ee;
+      color: #236342;
+    }
+
+    .badge.caution {
+      background: #faecec;
+      color: #873131;
+    }
+
+    .note {
+      padding: 14px 16px;
+      border-left: 4px solid var(--accent);
+      background: #f0f8fa;
+      border-radius: 10px;
+    }
+
+    .trial-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    .trial-table th,
+    .trial-table td {
+      padding: 10px;
+      border: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .trial-table th {
+      width: 28%;
+      background: #f2f7fa;
+      color: #274157;
+    }
+
+    .footer {
+      margin-top: 28px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .site-header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 20;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        padding: 92px 14px 40px;
+      }
+
+      .highlight-hero,
+      .card {
+        padding: 20px;
+        border-radius: 14px;
+      }
+
+      .summary-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trial-table,
+      .trial-table tbody,
+      .trial-table tr,
+      .trial-table th,
+      .trial-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .trial-table th {
+        border-bottom: 0;
+      }
+
+      .paper-heading {
+        grid-template-columns: 1fr;
+      }
+
+      .topic-logo {
+        width: auto;
+        min-height: 42px;
+        flex-direction: row;
+        justify-self: start;
+        border-radius: 12px;
+        padding: 7px 10px;
+      }
+
+      .topic-logo svg {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html#home" aria-label="Home">
+      <img class="brand-logo" src="../assets/tokai-gastro-logo.png" alt="Tokai University Gastroenterology">
+      <span>
+        <span class="brand-ja">東海大学医学部消化器内科胆膵班</span>
+        <span class="brand-en">Tokai University School of Medicine, Biliary-Pancreatic Clinical Group</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="../index.html#home">Home</a>
+      <a href="weekly-highlight-2026-07-12.html">Highlights</a>
+      <a href="../AIP_Diagnosis/index.html">AIP tool</a>
+      <a href="../index.html#members">PI</a>
+      <a href="../index.html#research">Research</a>
+      <a href="../index.html#education">Education</a>
+      <a href="../index.html#publications">Publications</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="highlight-hero">
+      <p class="eyebrow">Weekly Pancreatobiliary Research Highlight</p>
+      <h1>今週の胆膵疾患研究ハイライト</h1>
+      <p>PubMedとClinicalTrials.govを中心に、胆膵内視鏡・ERCP・EUS、急性膵炎・慢性膵炎、肝移植・PSC・IgG4関連疾患の臨床的に重要そうな新着情報を整理した試し版です。</p>
+      <p>雑誌のQ分類はSCImago等で確認できる範囲の目安です。分野や年度により変動するため、正式な評価には原典をご確認ください。</p>
+      <div class="hero-meta">
+        <span class="pill">対象期間: 2026年7月6日〜7月12日</span>
+        <span class="pill">作成日: 2026年7月12日</span>
+        <span class="pill">試験運用版</span>
+      </div>
+    </section>
+
+    <nav class="nav" aria-label="ページ内ナビゲーション">
+      <a href="#endoscopy">ERCP・EUS</a>
+      <a href="#pancreatitis">膵炎</a>
+      <a href="#immune-transplant">PSC・IgG4・移植</a>
+      <a href="#trials">臨床試験</a>
+    </nav>
+
+    <details id="endoscopy" class="card section-panel" open>
+      <summary class="section-summary"><h2>胆膵内視鏡・ERCP・EUS</h2></summary>
+
+      <article class="paper">
+        <div class="paper-heading">
+          <p class="paper-title"><a href="https://pubmed.ncbi.nlm.nih.gov/42425571/" target="_blank" rel="noopener">Association between insufficient balloon dilatation during endoscopic papillary balloon dilatation and post-ERCP pancreatitis in patients with choledocholithiasis；EPBD拡張不十分とERCP後膵炎</a></p>
+          <span class="topic-logo topic-ercp" aria-label="ERCP領域">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4v7c0 3 2 5 5 5h1c3 0 5-2 5-5V4"/><path d="M9 4v7c0 1.2.8 2 2 2h1c1.2 0 2-.8 2-2V4"/><path d="M12 16v4"/></svg>
+            <small>ERCP</small>
+          </span>
+        </div>
+        <div class="badges">
+          <span class="badge clinical">BMJ Open / SJR目安 Q1</span>
+          <span class="badge clinical">多施設後ろ向き研究</span>
+          <span class="badge caution">PEP予防</span>
+          <span class="badge">PMID: 42425571</span>
+        </div>
+        <p>総胆管結石に対するEPBDで、バルーン拡張が不十分な場合のpost-ERCP pancreatitisとの関連を検討した中国の多施設後ろ向き研究です。EPBDの適応、拡張径、拡張時間を見直すうえで実臨床への波及がありそうです。</p>
+      </article>
+
+      <article class="paper">
+        <div class="paper-heading">
+          <p class="paper-title"><a href="https://pubmed.ncbi.nlm.nih.gov/42432573/" target="_blank" rel="noopener">Single-stage versus two-stage ERCP and laparoscopic cholecystectomy for gallbladder stones with choledocholithiasis；胆嚢・総胆管結石に対する一段階治療</a></p>
+          <span class="topic-logo topic-ercp" aria-label="ERCP領域">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4v7c0 3 2 5 5 5h1c3 0 5-2 5-5V4"/><path d="M9 4v7c0 1.2.8 2 2 2h1c1.2 0 2-.8 2-2V4"/><path d="M12 16v4"/></svg>
+            <small>ERCP</small>
+          </span>
+        </div>
+        <div class="badges">
+          <span class="badge clinical">BMC Gastroenterology / SJR目安 Q2</span>
+          <span class="badge clinical">胆管結石診療</span>
+          <span class="badge">PMID: 42432573</span>
+        </div>
+        <p>胆嚢結石と総胆管結石を併存する症例で、ERCPと腹腔鏡下胆嚢摘出術を一段階で行うか二段階で行うかを比較した研究です。入院期間、偶発症、再発リスク、地域の手術・内視鏡体制を考えるうえで参考になります。</p>
+      </article>
+
+      <article class="paper">
+        <div class="paper-heading">
+          <p class="paper-title"><a href="https://pubmed.ncbi.nlm.nih.gov/42420492/" target="_blank" rel="noopener">Upfront laparoscopic cholecystectomy versus preoperative MRCP or ERCP in patients with suspected choledocholithiasis；総胆管結石疑い症例の術前検査戦略</a></p>
+          <span class="topic-logo topic-surgery" aria-label="胆石外科領域">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l8-8"/><path d="M13 5l6 6"/><path d="M12 4l8 8"/><path d="M7 17l-3 3"/><path d="M15 7l-5 5"/></svg>
+            <small>胆石</small>
+          </span>
+        </div>
+        <div class="badges">
+          <span class="badge high">Surgical Endoscopy / SJR目安 Q1</span>
+          <span class="badge clinical">実臨床コホート</span>
+          <span class="badge">PMID: 42420492</span>
+        </div>
+        <p>総胆管結石疑い症例で、術前MRCP/ERCPを挟む戦略と、早期胆嚢摘出を選ぶ戦略を比較する流れの論文です。胆管結石リスク層別化と不要なERCP回避という観点から、教育カンファレンス向きです。</p>
+      </article>
+
+      <article class="paper">
+        <div class="paper-heading">
+          <p class="paper-title"><a href="https://pubmed.ncbi.nlm.nih.gov/42418072/" target="_blank" rel="noopener">Repeat ERCP in the Era of Interventional EUS: Toward an Individualized Rescue Strategy；Interventional EUS時代の再ERCP戦略</a></p>
+          <span class="topic-logo topic-eus" aria-label="EUS領域">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="5"/><path d="M14 14l5 5"/><path d="M4 14c2-2 4-2 6 0s4 2 6 0"/></svg>
+            <small>EUS</small>
+          </span>
+        </div>
+        <div class="badges">
+          <span class="badge">Digestive Diseases and Sciences / SJR目安 Q2</span>
+          <span class="badge caution">Editorial / Commentary</span>
+          <span class="badge">PMID: 42418072</span>
+        </div>
+        <p>初回ERCP不成功後に、再ERCP、EUS下胆道ドレナージ、経皮処置、外科的アプローチをどう選ぶかというテーマです。若手医師には「処置の成功・不成功」だけでなく、次の一手を考える教材として有用です。</p>
+      </article>
+
+      <article class="paper">
+        <div class="paper-heading">
+          <p class="paper-title"><a href="https://pubmed.ncbi.nlm.nih.gov/42428231/" target="_blank" rel="noopener">Ruptured pseudoaneurysm of right hepatic artery as immediate complication of lumen-apposing metal stent placement for choledochoduodenostomy；LAMS留置後の仮性動脈瘤破裂</a></p>
+          <span class="topic-logo topic-eus" aria-label="Interventional EUS領域">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="5"/><path d="M14 14l5 5"/><path d="M7 10h6"/><path d="M10 7v6"/></svg>
+            <small>EUS</small>
+          </span>
+        </div>
+        <div class="badges">
+          <span class="badge caution">Case report</span>
+          <span class="badge caution">SJR未確認</span>
+          <span class="badge caution">Interventional EUS安全管理</span>
+          <span class="badge">PMID: 42428231</span>
+        </div>
+        <p>LAMSを用いたEUS下胆道ドレナージ後の仮性動脈瘤破裂を扱った症例報告です。頻度の高い論文ではありませんが、EUS処置を学ぶ先生には、術前評価、穿刺ルート、出血時対応を考えるきっかけになります。</p>
+      </article>
+    </details>
+
+    <details id="pancreatitis" class="card section-panel" open>
+      <summary class="section-summary"><h2>急性膵炎・慢性膵炎</h2></summary>
+
+      <article class="paper">
+        <div class="paper-heading">
+          <p class="paper-title"><a href="https://pubmed.ncbi.nlm.nih.gov/42432925/" target="_blank" rel="noopener">Mean glucose AUC as a new predictor of in-hospital mortality in ICU patients with acute pancreatitis；急性膵炎ICU例の血糖AUC予後予測</a></p>
+          <span class="topic-logo topic-pancreas" aria-label="急性膵炎領域">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13c2-5 7-6 10-4 2 1 4 1 6 0"/><path d="M5 15c3 2 7 2 10 0 2-1 4-1 5 1"/><path d="M8 10c-1 3 0 6 3 8"/></svg>
+            <small>膵炎</small>
+          </span>
+        </div>
+        <div class="badges">
+          <span class="badge clinical">Medicine / SJR目安 Q2-Q3</span>
+          <span class="badge clinical">ICUデータベース研究</span>
+          <span class="badge">PMID: 42432925</span>
+        </div>
+        <p>ICU管理を要する急性膵炎で、血糖推移を用いた院内死亡予測を検討しています。単回の血糖値ではなく時間経過を評価する発想は、重症膵炎の初期管理や予後予測を考えるうえで興味深いテーマです。</p>
+      </article>
+
+      <article class="paper">
+        <div class="paper-heading">
+          <p class="paper-title"><a href="https://pubmed.ncbi.nlm.nih.gov/42418073/" target="_blank" rel="noopener">Fragility of Randomized Controlled Trials for Fluid Resuscitation in Acute Pancreatitis；急性膵炎輸液RCTの脆弱性評価</a></p>
+          <span class="topic-logo topic-evidence" aria-label="エビデンス領域">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19V5"/><path d="M5 19h14"/><path d="M9 16v-5"/><path d="M13 16V8"/><path d="M17 16v-3"/></svg>
+            <small>EBM</small>
+          </span>
+        </div>
+        <div class="badges">
+          <span class="badge">Digestive Diseases and Sciences / SJR目安 Q2</span>
+          <span class="badge caution">RCT解釈</span>
+          <span class="badge">PMID: 42418073</span>
+        </div>
+        <p>急性膵炎の輸液療法に関するRCTの結果が、どの程度少数のイベント変化で揺らぎうるかを検討するタイプの論文です。ガイドラインや論文を読む若手医師に、エビデンスの強さを読み解く教材として有用です。</p>
+      </article>
+
+      <article class="paper">
+        <div class="paper-heading">
+          <p class="paper-title"><a href="https://pubmed.ncbi.nlm.nih.gov/42419575/" target="_blank" rel="noopener">Application of a glyceride-mimetic prodrug strategy to deliver protease inhibitors to gut lymph to alleviate organ failure；リンパ送達型プロテアーゼ阻害薬による臓器障害軽減</a></p>
+          <span class="topic-logo topic-drug" aria-label="創薬・治療領域">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 16l8-8"/><path d="M7 9l8 8"/><rect x="5" y="4" width="14" height="16" rx="7" transform="rotate(45 12 12)"/></svg>
+            <small>創薬</small>
+          </span>
+        </div>
+        <div class="badges">
+          <span class="badge high">Journal of Controlled Release / SJR目安 Q1</span>
+          <span class="badge high">高IF誌目安</span>
+          <span class="badge">PMID: 42419575</span>
+        </div>
+        <p>急性膵炎に関連する臓器障害を軽減するため、プロテアーゼ阻害薬をリンパ系へ届けるドラッグデリバリー戦略を扱っています。基礎・橋渡し研究寄りですが、重症膵炎治療の将来像として注目です。</p>
+      </article>
+
+      <article class="paper">
+        <div class="paper-heading">
+          <p class="paper-title"><a href="https://pubmed.ncbi.nlm.nih.gov/42420697/" target="_blank" rel="noopener">Leaving No Stone Unturned - Update on the Current Approach to Diagnosing and Treatment of Idiopathic Acute Pancreatitis；特発性急性膵炎の診断治療アップデート</a></p>
+          <span class="topic-logo topic-pancreas" aria-label="膵炎診断領域">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13c2-5 7-6 10-4 2 1 4 1 6 0"/><path d="M5 15c3 2 7 2 10 0 2-1 4-1 5 1"/><path d="M15 6l4 4"/><path d="M19 6l-4 4"/></svg>
+            <small>診断</small>
+          </span>
+        </div>
+        <div class="badges">
+          <span class="badge">Digestive Diseases and Sciences / SJR目安 Q2</span>
+          <span class="badge clinical">総説・診断整理</span>
+          <span class="badge">PMID: 42420697</span>
+        </div>
+        <p>特発性急性膵炎の診断と治療方針を整理するアップデートです。胆泥、微小結石、膵胆管合流異常、腫瘍性病変、遺伝性素因などを含めた鑑別の組み立てに使いやすい内容と考えられます。</p>
+      </article>
+
+      <article class="paper">
+        <div class="paper-heading">
+          <p class="paper-title"><a href="https://pubmed.ncbi.nlm.nih.gov/42423173/" target="_blank" rel="noopener">Bedside Triage by Large Language Models in Acute Pancreatitis；大規模言語モデルによる急性膵炎トリアージ</a></p>
+          <span class="topic-logo topic-ai" aria-label="AI・教育領域">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="3"/><path d="M9 10h.01"/><path d="M15 10h.01"/><path d="M9 14c2 1 4 1 6 0"/><path d="M12 2v4"/><path d="M12 18v4"/></svg>
+            <small>AI</small>
+          </span>
+        </div>
+        <div class="badges">
+          <span class="badge">World Journal of Surgery / SJR目安 Q1</span>
+          <span class="badge caution">AI・教育利用</span>
+          <span class="badge">PMID: 42423173</span>
+        </div>
+        <p>急性膵炎のトリアージシナリオを用いて大規模言語モデルを比較した研究です。診療判断を置き換えるものではありませんが、教育支援や思考過程の見える化という観点で今後増えそうな領域です。</p>
+      </article>
+    </details>
+
+    <details id="immune-transplant" class="card section-panel" open>
+      <summary class="section-summary"><h2>肝移植・PSC・IgG4関連疾患</h2></summary>
+
+      <article class="paper">
+        <div class="paper-heading">
+          <p class="paper-title"><a href="https://pubmed.ncbi.nlm.nih.gov/42425414/" target="_blank" rel="noopener">Liver Transplant from an Infant DCD Donor Utilizing Normothermic Regional Perfusion；乳児DCDドナー肝移植とNRP</a></p>
+          <span class="topic-logo topic-transplant" aria-label="肝移植領域">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20c0-6 3-10 8-12"/><path d="M11 18c5 0 8-4 8-10V5h-3c-6 0-10 4-10 10"/><path d="M9 13c2 .5 4 .5 6 0"/></svg>
+            <small>移植</small>
+          </span>
+        </div>
+        <div class="badges">
+          <span class="badge high">American Journal of Transplantation / SJR目安 Q1</span>
+          <span class="badge high">移植領域高IF誌目安</span>
+          <span class="badge">PMID: 42425414</span>
+        </div>
+        <p>小児DCDドナーとnormothermic regional perfusionを扱った肝移植領域の報告です。胆道合併症や移植胆管障害の背景を考えるうえで、胆膵・肝胆道領域の医師にも関連するテーマです。</p>
+      </article>
+
+      <article class="paper">
+        <div class="paper-heading">
+          <p class="paper-title"><a href="https://pubmed.ncbi.nlm.nih.gov/42415658/" target="_blank" rel="noopener">Short, not skinny: The distinct sarcopenia phenotype of pediatric primary sclerosing cholangitis-inflammatory bowel disease；小児PSC-IBDのサルコペニア表現型</a></p>
+          <span class="topic-logo topic-psc" aria-label="PSC領域">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16"/><path d="M17 4v16"/><path d="M7 8c4 0 6 2 10 2"/><path d="M7 14c4 0 6-2 10-2"/><path d="M7 18c4 0 6-2 10-2"/></svg>
+            <small>PSC</small>
+          </span>
+        </div>
+        <div class="badges">
+          <span class="badge clinical">Journal of Pediatric Gastroenterology and Nutrition / SJR目安 Q1-Q2</span>
+          <span class="badge clinical">PSC・IBD</span>
+          <span class="badge">PMID: 42415658</span>
+        </div>
+        <p>小児PSC-IBDのサルコペニア表現型に関する研究です。成人PSC診療とは異なる視点ですが、慢性胆汁うっ滞、炎症、栄養状態を一体で評価する重要性を示す内容です。</p>
+      </article>
+
+      <article class="paper">
+        <div class="paper-heading">
+          <p class="paper-title"><a href="https://pubmed.ncbi.nlm.nih.gov/42428591/" target="_blank" rel="noopener">Massive Upper Gastrointestinal Bleeding From Ruptured Gastric Varices: A Rare Presentation of Type 1 Autoimmune Pancreatitis；胃静脈瘤破裂で発症した1型AIP</a></p>
+          <span class="topic-logo topic-aip" aria-label="自己免疫性膵炎領域">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 4v5c0 4-3 7-7 9-4-2-7-5-7-9V7l7-4z"/><path d="M9 12l2 2 4-5"/></svg>
+            <small>AIP</small>
+          </span>
+        </div>
+        <div class="badges">
+          <span class="badge caution">ACG Case Reports Journal / 症例報告誌</span>
+          <span class="badge caution">SJR未確認</span>
+          <span class="badge caution">AIP稀少例</span>
+          <span class="badge">PMID: 42428591</span>
+        </div>
+        <p>1型自己免疫性膵炎が胃静脈瘤破裂として発見された症例報告です。EUS下生検やERCPも関与しており、AIPの診断だけでなく、門脈圧亢進や血管合併症を含めて考える教材になります。</p>
+      </article>
+    </details>
+
+    <details id="trials" class="card section-panel" open>
+      <summary class="section-summary"><h2>新規登録臨床研究</h2></summary>
+      <p class="note">ClinicalTrials.govでは対象期間内に、ERCP教育・術者負荷評価に関連する研究が1件抽出されました。jRCTは本試し版では安定した自動取得処理をまだ組み込めていないため、公開検索での最終確認を前提とします。</p>
+
+      <h3>検索条件</h3>
+      <p>対象期間: 2026年7月6日〜7月12日。検索語: ERCP, EUS, endoscopic ultrasound, EUS-guided, EUS procedure/intervention, acute pancreatitis, chronic pancreatitis, autoimmune pancreatitis, post-ERCP pancreatitis、および対応する日本語概念。</p>
+
+      <h3>今週の注目試験</h3>
+      <table class="trial-table">
+        <tbody>
+          <tr>
+            <th>NCT ID</th>
+            <td><a href="https://clinicaltrials.gov/study/NCT07691580" target="_blank" rel="noopener">NCT07691580</a></td>
+          </tr>
+          <tr>
+            <th>試験名</th>
+            <td><a href="https://clinicaltrials.gov/study/NCT07691580" target="_blank" rel="noopener">Evaluation of Biomechanical Forced During the Practice of Endoscopic Retrograde Cholangiopancreatography</a></td>
+          </tr>
+          <tr>
+            <th>対象疾患・テーマ</th>
+            <td>ERCP、術者の身体負荷、筋骨格系負担</td>
+          </tr>
+          <tr>
+            <th>介入・検査内容</th>
+            <td>CAPTIV systemを用いて、ERCP施行中の筋活動や関節角度などのバイオメカニクス指標を記録する研究です。</td>
+          </tr>
+          <tr>
+            <th>ステータス・フェーズ</th>
+            <td>Recruiting / Phase: NA</td>
+          </tr>
+          <tr>
+            <th>登録日・最終更新日</th>
+            <td>First posted: 2026年7月9日 / Last updated: 2026年7月10日</td>
+          </tr>
+          <tr>
+            <th>スポンサー</th>
+            <td>Centre Hospitalier Universitaire, Amiens</td>
+          </tr>
+          <tr>
+            <th>予定登録数</th>
+            <td>10例予定</td>
+          </tr>
+          <tr>
+            <th>対象地域</th>
+            <td>フランスと推定されますが、施設情報はClinicalTrials.gov原文での確認が必要です。</td>
+          </tr>
+          <tr>
+            <th>主要評価項目</th>
+            <td>ERCP中の平均筋活動、角度解析。</td>
+          </tr>
+          <tr>
+            <th>臨床的に重要そうな点</th>
+            <td>ERCPは術者側にも姿勢・身体負荷がかかる手技です。教育、処置室環境、内視鏡医の職業性障害予防を考える研究として、胆膵内視鏡トレーニングの質改善につながる可能性があります。</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>jRCT</h3>
+      <p>該当なし。本試し版ではjRCT公開検索の自動取得処理をまだ組み込んでいないため、次回以降の運用では手動確認または取得方法の整備が必要です。</p>
+    </details>
+
+    <p class="footer">
+      このページは医師・医学生・研究者向けの文献整理メモです。患者さんへの医療広告、個別診療相談、治療効果の保証を目的としたものではありません。<br>
+      <a href="../index.html">トップページへ戻る</a>
+    </p>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>
