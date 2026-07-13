@@ -12,22 +12,4 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://iwaiwa2007-cmyk.github.io/TOKAIHBP-HP/AIP_Diagnosis/</loc>
-    <lastmod>2026-07-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://iwaiwa2007-cmyk.github.io/TOKAIHBP-HP/tools/acute-pancreatitis-triage/</loc>
-    <lastmod>2026-07-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://iwaiwa2007-cmyk.github.io/TOKAIHBP-HP/tools/pep-prevention/</loc>
-    <lastmod>2026-07-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
 </urlset>
