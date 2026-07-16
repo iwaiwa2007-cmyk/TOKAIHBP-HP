@@ -338,6 +338,19 @@ h3 {
   color: #314254;
 }
 
+.news-photo {
+  margin: 6px 0 0;
+  max-width: 260px;
+}
+
+.news-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
 .news-item a {
   color: var(--blue);
   text-decoration: underline;
