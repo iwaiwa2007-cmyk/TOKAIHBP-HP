@@ -46,8 +46,8 @@
     }
 
     .tool-header {
-      background: #ffffff;
-      border-bottom: 1px solid var(--line);
+      background: linear-gradient(120deg, #12304a, #17657b);
+      color: #ffffff;
     }
 
     .wrap {
@@ -56,9 +56,16 @@
     }
 
     .top {
-      padding: 24px 0 18px;
+      padding: 25px 0;
       display: grid;
       gap: 10px;
+    }
+
+    .hero-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: flex-start;
     }
 
     h1 {
@@ -70,8 +77,18 @@
 
     .lead {
       margin: 0;
-      color: var(--muted);
+      color: #d8edf1;
       max-width: 920px;
+      font-size: 13px;
+    }
+
+    .local-status {
+      flex: 0 0 auto;
+      border: 1px solid #ffffff55;
+      border-radius: 999px;
+      padding: 6px 11px;
+      font-size: 11px;
+      white-space: nowrap;
     }
 
     .notice {
@@ -86,31 +103,44 @@
 
     .tool-tabs {
       display: flex;
-      gap: 10px;
-      padding: 0 0 16px;
+      gap: 4px;
+      padding: 8px 0;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
       scrollbar-width: thin;
     }
 
+    .tool-nav {
+      position: sticky;
+      top: 76px;
+      z-index: 8;
+      background: #ffffff;
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 5px 14px rgba(24, 59, 76, 0.05);
+    }
+
     .tab {
-      border: 2px solid var(--accent);
-      background: var(--accent);
-      color: #fff;
-      border-radius: 10px;
-      min-height: 42px;
-      padding: 8px 16px;
-      font-weight: 900;
-      font-size: 15px;
+      border: 0;
+      background: transparent;
+      color: #38515f;
+      border-radius: 6px;
+      min-height: 36px;
+      padding: 8px 12px;
+      font-weight: 800;
+      font-size: 13px;
       white-space: nowrap;
       cursor: pointer;
       touch-action: manipulation;
-      box-shadow: 0 6px 14px rgba(15, 118, 110, 0.16);
+      box-shadow: none;
     }
 
     .tab.active {
-      border-color: var(--accent);
-      background: #fff;
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    .tab:hover {
+      background: var(--accent-soft);
       color: var(--accent);
     }
 
@@ -120,7 +150,7 @@
 
     section.screen {
       display: block;
-      scroll-margin-top: 18px;
+      scroll-margin-top: 140px;
     }
 
     section.screen + section.screen {
@@ -147,7 +177,7 @@
     .panel {
       background: var(--panel);
       border: 1px solid var(--line);
-      border-radius: 8px;
+      border-radius: 12px;
       box-shadow: var(--shadow);
     }
 
@@ -417,6 +447,18 @@
     }
 
     @media (max-width: 640px) {
+      .tool-nav {
+        top: 70px;
+      }
+
+      .hero-row {
+        display: block;
+      }
+
+      .local-status {
+        display: none;
+      }
+
       .wrap {
         width: min(100% - 20px, 1180px);
       }
@@ -436,8 +478,7 @@
       }
 
       .tool-tabs {
-        margin-inline: -10px;
-        padding-inline: 10px;
+        padding-inline: 0;
         scroll-snap-type: x proximity;
       }
 
@@ -541,7 +582,7 @@
 
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="../index.html#home">Home</a>
-      <a href="../weekly-highlights/weekly-highlight-2026-07-12.html">Highlights</a>
+      <a href="../weekly-highlights/weekly-highlight-2026-07-19.html">Highlit</a>
       <a href="../index.html#members">PI</a>
       <a href="../index.html#activity">Activity</a>
       <a href="../index.html#tools">Tools</a>
@@ -552,18 +593,28 @@
 
   <header class="tool-header">
     <div class="wrap top">
-      <h1>IgG4関連疾患診断（研究）</h1>
-      <p class="lead">各項目の有無をクリックし、ページ下部で判定をまとめて確認します。自己免疫性膵炎臨床診断基準2018、2011診断基準の参考判定、ICDC、病理組織学的4所見、IgG4関連疾患包括診断基準2020、IgG4関連硬化性胆管炎2020の確認に対応しています。</p>
-      <nav class="tool-tabs" aria-label="診断基準">
+      <div class="hero-row">
+        <div>
+          <h1>IgG4関連疾患診断（研究）</h1>
+          <p class="lead">自己免疫性膵炎、ICDC、病理組織、IgG4関連疾患包括診断基準、IgG4関連硬化性胆管炎の判定を整理</p>
+        </div>
+        <div class="local-status">端末内で計算・データ送信なし</div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tool-nav" aria-label="ページ内ナビゲーション">
+    <div class="wrap">
+      <div class="tool-tabs">
         <button class="tab active" data-target="screen-jps">2018</button>
         <button class="tab" data-target="screen-icdc">ICDC</button>
         <button class="tab" data-target="screen-histology">病理</button>
         <button class="tab" data-target="screen-comprehensive">包括</button>
         <button class="tab" data-target="screen-igg4sc">IgG4-SC</button>
         <button class="tab" data-target="summary">結果</button>
-      </nav>
+      </div>
     </div>
-  </header>
+  </nav>
 
   <main class="wrap">
     <section class="screen active" id="screen-jps">

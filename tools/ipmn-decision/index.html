@@ -10,12 +10,13 @@
   <link rel="stylesheet" href="../../style.css?v=20260713-2">
   <style>
     :root{--navy:#12304a;--blue:#176b87;--green:#0f766e;--green2:#e8f5f2;--bg:#f3f6f8;--card:#fff;--ink:#172b3a;--muted:#617684;--line:#d9e3e7;--red:#aa2e38;--redbg:#fff0f1;--amber:#93600a;--amberbg:#fff7e5;--ok:#16715a;--okbg:#eaf7f2}
-    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Sans",sans-serif;line-height:1.62}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Sans",sans-serif;line-height:1.62}
     .tool-header{background:linear-gradient(120deg,var(--navy),#17657b);color:#fff;padding:24px clamp(18px,4vw,48px)}.head,.wrap{max-width:1360px;margin:auto}.head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.head h1{font-size:clamp(23px,3vw,34px);margin:0 0 3px}.head p{margin:0;color:#d8edf1;font-size:13px}.local{border:1px solid #ffffff55;border-radius:99px;padding:6px 11px;font-size:11px;white-space:nowrap}
+    .tool-nav{position:sticky;top:76px;z-index:8;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 5px 14px #183b4c0b}.tool-nav-inner{display:flex;align-items:center;gap:4px;overflow-x:auto;padding:8px 18px}.tool-nav a{flex:0 0 auto;color:#38515f;text-decoration:none;font-size:13px;font-weight:800;padding:8px 12px;border-radius:6px}.tool-nav a:hover{background:var(--green2);color:var(--green)}#knowledge,#decision,#dart,#sources{scroll-margin-top:140px}
     .tool-main{padding:18px 18px 54px}.layout{display:grid;gap:18px;align-items:start}.decision-columns{display:grid;grid-template-columns:1fr;gap:18px;align-items:start}.card{background:var(--card);border:1px solid var(--line);border-radius:15px;box-shadow:0 4px 14px #17394a0b;margin-bottom:16px;overflow:hidden}.card-head{padding:15px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:center}.card-head h2{font-size:18px;margin:0}.card-head span{font-size:11px;color:var(--muted)}.body{padding:16px 18px}
-    .evidence-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,360px);gap:18px;align-items:start}.summary-paper{display:grid;gap:12px;margin:0;padding-left:0;list-style:none}.summary-paper li{font-size:13px}.summary-paper strong{color:var(--navy)}.ipmn-figure{margin:0}.ipmn-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px;background:#fff}.ipmn-figure figcaption{font-size:10px;color:var(--muted);margin-top:5px}.evidence-figure{margin-top:10px;max-width:560px}.evidence-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#fff}.evidence-figure figcaption{font-size:10px;color:var(--muted);margin-top:5px}.guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.guide-card{border:1px solid var(--line);border-radius:12px;padding:13px;background:#fbfdfe}.guide-card h3{margin:0 0 6px;font-size:15px;color:var(--navy)}.guide-card p{margin:0;color:var(--muted);font-size:12px}.field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.risk-panel{border:1px solid var(--line);border-radius:13px;padding:12px;margin-bottom:13px}.risk-panel.hrs{background:#fff7f8;border-color:#efc3c8}.risk-panel.wf{background:#fffaf0;border-color:#ead39a}.risk-title{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:900;margin:0 0 10px}.risk-title .pill{display:inline-flex;align-items:center;border-radius:999px;padding:3px 9px;color:#fff;font-size:11px}.risk-title.hrs{color:var(--red)}.risk-title.hrs .pill{background:var(--red)}.risk-title.wf{color:var(--amber)}.risk-title.wf .pill{background:var(--amber)}fieldset{border:0;margin:0 0 16px;padding:0}legend{font-size:14px;font-weight:900;color:#405765;margin-bottom:8px}.check{display:flex;gap:9px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:10px;background:#fff;cursor:pointer;min-height:54px}.check:hover{border-color:#9cb7c1}.check input{width:18px;height:18px;margin:2px 0 0;accent-color:var(--blue);flex:0 0 auto}.risk-panel.hrs .check input{accent-color:var(--red)}.risk-panel.wf .check input{accent-color:var(--amber)}.check span:first-of-type{font-size:13px;font-weight:700}.check small{display:block;color:var(--muted);font-size:10px;margin-top:2px}.field{display:flex;flex-direction:column;gap:5px}.field label{font-size:12px;font-weight:800;color:#405765}.field input,.field select{width:100%;min-height:40px;border:1px solid #cbd8dd;border-radius:8px;padding:7px 9px;font:inherit;font-size:13px;background:#fff}.inline{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:12px}.actions{display:flex;gap:8px;justify-content:flex-end;margin-top:14px}.actions button{border:0;border-radius:9px;padding:9px 13px;font-weight:800;cursor:pointer}.reset{background:#eaf0f2;color:#3c5360}.primary,.external-link{background:var(--blue);color:#fff}.external-link{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:9px;padding:9px 13px;font-weight:800;font-size:13px}
-    .result-box,.section-result{padding:15px;border-radius:12px;border:1px solid var(--line);background:#f7fafb;margin:12px 0 18px}.result-box h3,.section-result h3{margin:0 0 8px;font-size:16px}.section-result{border-left:5px solid var(--blue)}.badge{display:inline-flex;border-radius:999px;padding:4px 9px;font-size:11px;font-weight:900;margin:0 5px 8px 0}.badge.ok{background:var(--okbg);color:var(--ok)}.badge.warn{background:var(--amberbg);color:var(--amber)}.badge.danger{background:var(--redbg);color:var(--red)}.badge.info{background:#eaf3f7;color:#176b87}.recommend{margin:7px 0;padding:9px 11px;border-left:5px solid var(--blue);border-radius:8px;background:#f4f9fb;font-size:12px}.recommend.danger{border-color:var(--red);background:var(--redbg)}.recommend.warn{border-color:#e09318;background:var(--amberbg)}.recommend.ok{border-color:var(--ok);background:var(--okbg)}.muted{color:var(--muted);font-size:12px}.notice{background:#fff8e8;border:1px solid #ead39a;border-left:5px solid #c68a1d;border-radius:11px;padding:11px 15px;margin-top:16px;font-size:12px;color:#634d22}.refs{font-size:11px;color:var(--muted)}.refs ul{margin:0;padding-left:20px}.refs li{margin:5px 0}
-    @media(max-width:980px){.decision-columns,.evidence-layout{grid-template-columns:1fr}.guide-grid{grid-template-columns:1fr}.ipmn-figure{max-width:480px}}@media(max-width:680px){.field-grid,.inline{grid-template-columns:1fr}.local{display:none}}
+    .evidence-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,360px);gap:18px;align-items:start}.summary-paper{display:grid;gap:12px;margin:0;padding-left:0;list-style:none}.summary-paper li{font-size:13px}.summary-paper strong{color:var(--navy)}.ipmn-figure{margin:0}.ipmn-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px;background:#fff}.ipmn-figure figcaption{font-size:10px;color:var(--muted);margin-top:5px}.evidence-figure{margin-top:10px;max-width:560px}.evidence-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#fff}.evidence-figure figcaption{font-size:10px;color:var(--muted);margin-top:5px}.guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.guide-card{border:1px solid var(--line);border-radius:12px;padding:13px;background:#fbfdfe}.guide-card h3{margin:0 0 6px;font-size:15px;color:var(--navy)}.guide-card p{margin:0;color:var(--muted);font-size:12px}.field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.risk-panel{border:1px solid var(--line);border-radius:13px;padding:12px;margin-bottom:13px}.risk-panel.hrs{background:#fff7f8;border-color:#efc3c8}.risk-panel.wf{background:#fffaf0;border-color:#ead39a}.risk-panel.other{background:var(--green2);border-color:#aedbd2}.risk-title{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:900;margin:0 0 10px}.risk-title .pill{display:inline-flex;align-items:center;border-radius:999px;padding:3px 9px;color:#fff;font-size:11px}.risk-title.hrs{color:var(--red)}.risk-title.hrs .pill{background:var(--red)}.risk-title.wf{color:var(--amber)}.risk-title.wf .pill{background:var(--amber)}.risk-title.other{color:var(--green)}fieldset{border:0;margin:0 0 16px;padding:0}legend{font-size:14px;font-weight:900;color:#405765;margin-bottom:8px}.check{display:flex;gap:9px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:10px;background:#fff;cursor:pointer;min-height:54px}.check:hover{border-color:#9cb7c1}.check input{width:18px;height:18px;margin:2px 0 0;accent-color:var(--blue);flex:0 0 auto}.risk-panel.hrs .check input{accent-color:var(--red)}.risk-panel.wf .check input{accent-color:var(--amber)}.risk-panel.other .check input{accent-color:var(--green)}.check span:first-of-type{font-size:13px;font-weight:700}.check small{display:block;color:var(--muted);font-size:10px;margin-top:2px}.field{display:flex;flex-direction:column;gap:5px}.field label{font-size:12px;font-weight:800;color:#405765}.field input,.field select{width:100%;min-height:40px;border:1px solid #cbd8dd;border-radius:8px;padding:7px 9px;font:inherit;font-size:13px;background:#fff}.inline{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:12px}.actions{display:flex;gap:8px;justify-content:flex-end;margin-top:14px}.actions button{border:0;border-radius:9px;padding:9px 13px;font-weight:800;cursor:pointer}.reset{background:#eaf0f2;color:#3c5360}.primary,.external-link{background:var(--blue);color:#fff}.external-link{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:9px;padding:9px 13px;font-weight:800;font-size:13px}
+    .result-box,.section-result{padding:15px;border-radius:12px;border:1px solid var(--line);background:#f7fafb;margin:12px 0 18px}.result-box h3,.section-result h3{margin:0 0 8px;font-size:17px}.section-result{border-left:5px solid var(--blue)}.badge{display:inline-flex;border-radius:999px;padding:4px 9px;font-size:11px;font-weight:900;margin:0 5px 8px 0}.badge.ok{background:var(--okbg);color:var(--ok)}.badge.warn{background:var(--amberbg);color:var(--amber)}.badge.danger{background:var(--redbg);color:var(--red)}.badge.info{background:#eaf3f7;color:#176b87}.recommend{margin:7px 0;padding:10px 12px;border-left:5px solid var(--blue);border-radius:8px;background:#f4f9fb;font-size:14px}.recommend.danger{border-color:var(--red);background:var(--redbg)}.recommend.warn{border-color:#e09318;background:var(--amberbg)}.recommend.ok{border-color:var(--ok);background:var(--okbg)}.muted{color:var(--muted);font-size:12px}.notice{background:#fff8e8;border:1px solid #ead39a;border-left:5px solid #c68a1d;border-radius:11px;padding:11px 15px;margin-top:16px;font-size:12px;color:#634d22}.refs{font-size:11px;color:var(--muted)}.refs ul{margin:0;padding-left:20px}.refs li{margin:5px 0}
+    @media(max-width:980px){.decision-columns,.evidence-layout{grid-template-columns:1fr}.guide-grid{grid-template-columns:1fr}.ipmn-figure{max-width:480px}}@media(max-width:680px){.tool-nav{top:70px}.tool-nav-inner{padding-left:12px}.field-grid,.inline{grid-template-columns:1fr}.local{display:none}}
   </style>
 </head>
 <body>
@@ -27,7 +28,7 @@
     <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="../../index.html#home">Home</a>
-      <a href="../../weekly-highlights/weekly-highlight-2026-07-12.html">Highlights</a>
+      <a href="../../weekly-highlights/weekly-highlight-2026-07-19.html">Highlit</a>
       <a href="../../index.html#members">PI</a>
       <a href="../../index.html#activity">Activity</a>
       <a href="../../index.html#tools">Tools</a>
@@ -37,10 +38,11 @@
   </header>
 
   <header class="tool-header"><div class="head"><div><h1>IPMN診療方針（研究用）</h1><p>京都国際ガイドライン・AGA・欧州/EPC・DART-1の整理</p></div><div class="local">端末内で計算・データ送信なし</div></div></header>
+  <nav class="tool-nav" aria-label="ページ内ナビゲーション"><div class="wrap tool-nav-inner"><a href="#knowledge">IPMNの一般的な知識</a><a href="#decision">IPMNに関する判定</a><a href="#dart">リスク因子の出現予測</a><a href="#sources">参考文献</a></div></nav>
 
   <main class="tool-main wrap">
-    <article class="card">
-      <div class="card-head"><h2>IPMNフォロー方法のエビデンス</h2><span>Surveillance evidence</span></div>
+    <article class="card" id="knowledge">
+      <div class="card-head"><h2>IPMNの一般的な知識</h2><span>Surveillance evidence</span></div>
       <div class="body">
         <div class="evidence-layout">
         <ul class="summary-paper">
@@ -69,8 +71,8 @@
     <div class="layout">
       <div class="decision-columns">
       <section>
-        <article class="card">
-          <div class="card-head"><h2>入力項目</h2><span>危険所見と患者背景</span></div>
+        <article class="card" id="decision">
+          <div class="card-head"><h2>IPMNに関する判定</h2><span>危険所見と患者背景</span></div>
           <div class="body">
             <div class="inline">
               <div class="field"><label for="cystSize">嚢胞径</label><select id="cystSize"><option value="lt20">20 mm未満</option><option value="20to29">20〜29 mm</option><option value="ge30">30 mm以上</option><option value="ge40">40 mm以上</option></select></div>
@@ -91,27 +93,27 @@
               <div class="risk-panel wf">
                 <div class="risk-title wf"><span class="pill">WF</span>Worrisome features</div>
                 <div class="field-grid">
-                  <label class="check"><input id="pancreatitis" type="checkbox"><span>IPMN関連膵炎</span></label>
-                  <label class="check"><input id="ca199" type="checkbox"><span>CA19-9上昇</span></label>
-                  <label class="check"><input id="newDiabetes" type="checkbox"><span>新規発症または急な糖尿病増悪</span></label>
-                  <label class="check"><input id="growth" type="checkbox"><span>嚢胞増大速度 ≥2.5 mm/年</span></label>
-                  <label class="check"><input id="lymph" type="checkbox"><span>リンパ節腫大</span></label>
-                  <label class="check"><input id="wall" type="checkbox"><span>嚢胞壁肥厚・造影</span></label>
-                  <label class="check"><input id="caliber" type="checkbox"><span>主膵管径変化＋尾側萎縮</span></label>
+                  <label class="check"><input id="pancreatitis" type="checkbox"><span>IPMN関連膵炎<small>IPMNによると考えられる急性膵炎</small></span></label>
+                  <label class="check"><input id="ca199" type="checkbox"><span>CA19-9上昇<small>血清CA19-9が基準値を超える（目安：37 U/mL超）</small></span></label>
+                  <label class="check"><input id="newDiabetes" type="checkbox"><span>新規発症または急な糖尿病増悪<small>1年以内に新規診断、または急速な悪化を認める糖尿病</small></span></label>
+                  <label class="check"><input id="enhancingNoduleLt5" type="checkbox"><span>造影される壁在結節 &lt;5 mm<small>造影効果を伴う5 mm未満の壁在結節</small></span></label>
+                  <label class="check"><input id="growth" type="checkbox"><span>嚢胞増大速度 ≥2.5 mm/年<small>経時的な画像比較で年間2.5 mm以上増大</small></span></label>
+                  <label class="check"><input id="lymph" type="checkbox"><span>リンパ節腫大<small>画像検査でIPMNに関連して疑われるリンパ節腫大</small></span></label>
+                  <label class="check"><input id="wall" type="checkbox"><span>嚢胞壁肥厚・造影<small>嚢胞壁の肥厚、または造影効果を認める</small></span></label>
+                  <label class="check"><input id="caliber" type="checkbox"><span>主膵管径変化＋尾側萎縮<small>主膵管径の急激な変化と、その尾側の膵実質萎縮</small></span></label>
+                </div>
+              </div>
+              <div class="risk-panel other">
+                <div class="risk-title other">その他の所見 （AGA2015、EPC2018）</div>
+                <div class="field-grid">
+                  <label class="check"><input id="solidComponent" type="checkbox"><span>充実成分あり</span></label>
+                  <label class="check"><input id="euspnaConcerning" type="checkbox"><span>EUS-FNAで懸念所見あり<small>悪性疑い細胞診など</small></span></label>
+                  <label class="check"><input id="symptoms" type="checkbox"><span>症状あり<small>腹痛、体重減少など。黄疸・膵炎は別項目</small></span></label>
+                  <label class="check"><input id="fitSurgery" type="checkbox" checked><span>手術適応を検討できる全身状態</span></label>
                 </div>
               </div>
             </fieldset>
             <div class="section-result" id="kyotoResult"></div>
-
-            <fieldset>
-              <legend>AGA・EPCで重視する所見</legend>
-              <div class="field-grid">
-                <label class="check"><input id="solidComponent" type="checkbox"><span>充実成分あり</span></label>
-                <label class="check"><input id="euspnaConcerning" type="checkbox"><span>EUS-FNAで懸念所見あり<small>悪性疑い細胞診など</small></span></label>
-                <label class="check"><input id="symptoms" type="checkbox"><span>症状あり<small>腹痛、体重減少など。黄疸・膵炎は別項目</small></span></label>
-                <label class="check"><input id="fitSurgery" type="checkbox" checked><span>手術適応を検討できる全身状態</span></label>
-              </div>
-            </fieldset>
             <div class="section-result" id="agaResult"></div>
             <div class="section-result" id="epcResult"></div>
 
@@ -119,16 +121,15 @@
           </div>
         </article>
 
-        <article class="card">
-          <div class="card-head"><h2>外部計算ツール</h2><span>DART-1</span></div>
+        <article class="card" id="dart">
+          <div class="card-head"><h2>リスク因子が出現する可能性の測定</h2><span>DART-1</span></div>
           <div class="body">
-            <p class="muted">ランダ・アメリカリスク層別化ツール（DART-1）は、診断時に懸念すべき特徴や高リスク徴候のないIPMNが、3年または5年以内に1つ以上の懸念すべき特徴や高リスク徴候を発症する確率を計算します。</p>
-            <div class="section-result" id="dartResult"></div>
+            <p class="muted">DART-1は、診断時に懸念すべき特徴（WF）や高リスク徴候（HRS）がないIPMNを対象に、今後3年または5年以内に、それらのリスク因子が出現する可能性を推定する外部計算ツールです。</p>
             <a class="external-link" href="https://rtools.mayo.edu/DART/" target="_blank" rel="noopener">DART-1計算式を開く</a>
           </div>
         </article>
 
-        <article class="card refs">
+        <article class="card refs" id="sources">
           <div class="card-head"><h2>出典</h2><span>Version 0.1</span></div>
           <div class="body"><ul>
             <li>Ohtsuka T, et al. Prospective multicenter surveillance study of BD-IPMN; risk of dual carcinogenesis. <em>Pancreatology</em>. 2024.</li>
@@ -165,6 +166,7 @@
       mpd==='5to9',
       checked('ca199'),
       checked('newDiabetes'),
+      checked('enhancingNoduleLt5'),
       checked('growth'),
       checked('lymph'),
       checked('wall'),
@@ -180,24 +182,19 @@
     else if(wfCount>0) kyoto+=rec(`WF ${wfCount}項目：EUS評価を推奨。複数WFでは手術適応も慎重に検討します。`,'warn');
     else kyoto+=rec(`HRS/WFなし：BD-IPMNサイズ別フォロー。目安：${kyotoFollow}。5年安定した20 mm未満では中止も選択肢ですが、併存膵癌リスクも説明します。`,'ok');
 
-    let aga=`${badge('AGA 2015', 'info')}`;
+    let aga='';
     if(checked('euspnaConcerning') || (checked('solidComponent')&&(mpd==='5to9'||mpd==='ge10'))) aga+=rec('手術を検討：充実成分＋主膵管拡張、またはEUS-FNAで懸念所見あり。','danger');
     else if(agaHigh>=2) aga+=rec('EUS-FNAを推奨：3 cm以上、主膵管拡張、充実成分のうち2項目以上。','warn');
     else aga+=rec('MRIフォロー：3 cm未満、充実成分なし、主膵管拡張なしでは1年後、その後2年ごと、変化なければ5年で中止も検討。','ok');
 
-    let epc=`${badge('欧州/EPC 2018', 'info')}`;
+    let epc='';
     if(epcAbsolute) epc+=rec('絶対手術適応あり：黄疸、造影壁在結節>5 mm、主膵管>10 mm、悪性細胞診など。','danger');
     else if(epcRelative) epc+=rec('相対手術適応あり：主膵管5-9.9 mm、嚢胞径40 mm以上、成長、CA19-9上昇、新規糖尿病、膵炎など。全身状態を踏まえて検討。','warn');
     else epc+=rec('保存的管理：無症候で40 mm未満、造影結節なしでは経過観察。手術可能な限り長期フォローを考慮。','ok');
 
-    const dartReady=hrsCount===0&&wfCount===0;
-    let dart=`${badge('DART-1', dartReady?'ok':'warn')}`;
-    dart+=rec(dartReady?'HRS/WFがない初診時IPMNに近い条件です。DART-1外部計算式で3年・5年リスク推定を確認できます。':'HRS/WFがある場合、DART-1の対象条件から外れる可能性があります。まずガイドライン上のHRS/WF対応を優先してください。',dartReady?'ok':'warn');
-
     $('kyotoResult').innerHTML=`<h3>京都国際ガイドライン判定</h3>${badge(`HRS ${hrsCount}項目`,hrsCount?'danger':'ok')}${badge(`WF ${wfCount}項目`,wfCount?'warn':'ok')}${kyoto}`;
     $('agaResult').innerHTML=`<h3>AGA 2015判定</h3>${aga}`;
     $('epcResult').innerHTML=`<h3>欧州/EPC 2018判定</h3>${epc}`;
-    $('dartResult').innerHTML=`<h3>DART-1適用の目安</h3>${dart}`;
   }
   function resetForm(){
     document.querySelectorAll('input[type=checkbox]').forEach(x=>x.checked=false);
