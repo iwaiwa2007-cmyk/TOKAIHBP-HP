@@ -36,7 +36,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WEEKLY_DIR = ROOT / "weekly-highlights"
 INDEX_PATH = ROOT / "index.html"
 SITEMAP_PATH = ROOT / "sitemap.xml"
-BASE_URL = "https://iwaiwa2007-cmyk.github.io/TOKAIHBP-HP/"
+BASE_URL = "https://iwaiwa2007-cmyk.github.io/tokaihbp-hp/"
 
 PUBMED_TERMS = [
     "ERCP",
