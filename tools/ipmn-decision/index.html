@@ -178,7 +178,8 @@
     const kyotoFollow=cyst==='lt20'?'6か月後に1回、その後安定なら18か月ごと':cyst==='20to29'?'6か月ごとに2回、その後安定なら12か月ごと':'6か月ごとの画像フォロー';
     let kyoto=`${badge('京都', 'info')}`;
     if(hrsCount>0) kyoto+=rec('HRSあり：手術適応を専門チームで検討。EUS/造影EUS、細胞診結果も含めて評価します。','danger');
-    else if(wfCount>0) kyoto+=rec(`WF ${wfCount}項目：EUS評価を推奨。複数WFでは手術適応も慎重に検討します。`,'warn');
+    else if(wfCount===1) kyoto+=rec(`WF 1項目：EUS等で追加評価します。HRSやHGD/浸潤癌を疑う所見がなく、画像サーベイランスを選択する場合の目安は「${kyotoFollow}」です。`,'warn');
+    else if(wfCount>1) kyoto+=rec(`WF ${wfCount}項目：EUS等で追加評価し、複数WFを踏まえて手術適応も慎重に検討します。`,'warn');
     else kyoto+=rec(`HRS/WFなし：BD-IPMNサイズ別フォロー。目安：${kyotoFollow}。5年安定した20 mm未満では中止も選択肢ですが、併存膵癌リスクも説明します。`,'ok');
 
     let aga='';
